@@ -9,7 +9,10 @@ union A
 	char b;
 };
 
-int main()
+
+
+
+int main1()
 {
 	// Ëæ»úÊı
 	/*for (int i = 0; i < 10; i++)
