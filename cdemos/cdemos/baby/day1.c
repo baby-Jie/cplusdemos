@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include<string.h>
+#include <Windows.h>
+
+typedef int int32;
 
 /// <summary>
 /// ²âÊÔËæ»úÊı
@@ -33,6 +37,9 @@ void testScanf()
 
 int main()
 {
-	testScanf();
+	int a = 0x00030C34;
+	int direction = 0;
+	scanf("");
+	SetWindowPos(a, NULL, 100, 0, 1000, 1000, 0);
 	return 0;
 }
