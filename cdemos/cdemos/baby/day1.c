@@ -35,11 +35,24 @@ void testScanf()
 	
 }
 
-int main()
+int main1()
 {
-	int a = 0x00030C34;
+
+	// atoi  itoa  
+	// a: alpha i:int
+
+	int a = 10;
+	char buffer[10] = { 0 };
+	_itoa(a, buffer, 2);
+
+
+	printf("%s\n", buffer);
+	//atoi()
+	/*int b = 011;
+	printf("%d\n", b);*/
+	/*int a = 0x00030C34;
 	int direction = 0;
 	scanf("");
-	SetWindowPos(a, NULL, 100, 0, 1000, 1000, 0);
+	SetWindowPos(a, NULL, 100, 0, 1000, 1000, 0);*/
 	return 0;
 }
