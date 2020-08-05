@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="baby\day1.c" />
     <ClCompile Include="io.c" />
+    <ClCompile Include="preprocessor.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

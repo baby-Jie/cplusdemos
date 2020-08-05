@@ -16,6 +16,9 @@
     <Filter Include="源文件\baby">
       <UniqueIdentifier>{cd6b18aa-5203-4ed4-b7df-4c06ccd08294}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\fragments">
+      <UniqueIdentifier>{48667722-8feb-4da1-9cf4-ea37713d60b2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="io.c">
@@ -23,6 +26,9 @@
     </ClCompile>
     <ClCompile Include="baby\day1.c">
       <Filter>源文件\baby</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocessor.c">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

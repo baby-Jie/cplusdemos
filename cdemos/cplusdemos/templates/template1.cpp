@@ -10,7 +10,7 @@ void templateFun(T a)
 	cout << a << endl;
 }
 
-int main1()
+int main_template1()
 {
 	templateFun("string");
 	templateFun(123);

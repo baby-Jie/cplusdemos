@@ -16,7 +16,7 @@
     <Filter Include="源文件\templates">
       <UniqueIdentifier>{5db73f65-5d63-40b7-afa6-90fd9cea2085}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\cpps">
+    <Filter Include="源文件\fragments">
       <UniqueIdentifier>{b9b6c89b-21b5-4bb9-81f2-7c7b44f886b5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -24,8 +24,8 @@
     <ClCompile Include="templates\template1.cpp">
       <Filter>源文件\templates</Filter>
     </ClCompile>
-    <ClCompile Include="cpps\cpp1.cpp">
-      <Filter>源文件\cpps</Filter>
+    <ClCompile Include="fragments\cpp1.cpp">
+      <Filter>源文件\fragments</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

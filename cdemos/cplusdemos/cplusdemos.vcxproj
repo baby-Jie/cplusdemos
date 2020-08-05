@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cpps\cpp1.cpp" />
+    <ClCompile Include="fragments\cpp1.cpp" />
     <ClCompile Include="templates\template1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

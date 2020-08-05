@@ -107,7 +107,7 @@ void testBuffer()
 	fclose(fp);
 }
 
-int main1()
+int main_io()
 {
 	testBuffer();
 	// Ëæ»úÊý

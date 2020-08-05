@@ -35,7 +35,7 @@ void testScanf()
 	
 }
 
-int main1()
+int main_day1()
 {
 
 	// atoi  itoa  
