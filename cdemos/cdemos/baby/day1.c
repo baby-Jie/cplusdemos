@@ -32,27 +32,105 @@ void testScanf()
 	int x;
 	scanf("%X", &x);
 	printf("%d\n", x);
-	
+
 }
 
-int main_day1()
+struct Student
 {
+	int id;  // 4
+	char* name; // 4
+	double score;  // 8
+};
 
-	// atoi  itoa  
-	// a: alpha i:int
+enum ScoreLevel
+{
+	S = 0, // 90+
+	A, // [80, 89)
+	B, // [70, 79)
+	C, // [60, 69)
+	D // < 60
+};
 
-	int a = 10;
-	char buffer[10] = { 0 };
-	_itoa(a, buffer, 2);
+
+union A
+{
+	int a;
+	double b; // 8
+	char c;
+};
 
 
-	printf("%s\n", buffer);
-	//atoi()
-	/*int b = 011;
-	printf("%d\n", b);*/
-	/*int a = 0x00030C34;
-	int direction = 0;
-	scanf("");
-	SetWindowPos(a, NULL, 100, 0, 1000, 1000, 0);*/
-	return 0;
+/// <summary>
+/// score : 0 -100
+/// </summary>
+enum ScoreLevel GetLevel(int score)
+{
+	enum ScoreLevel level;
+	if (score >= 90)
+	{
+		level = 0;
+		level = S;
+	}
+	else if (80 <= score && score < 90)
+	{
+		level = A;
+	}
+	else if (70 <= score && score < 80)
+	{
+		level = B;
+	}
+	else if (60 <= score && score < 70)
+	{
+		level = C;
+	}
+	else if (score < 60)
+	{
+		level = D;
+	}
+	return level;
+}
+
+void test1()
+{
+	union A a;
+	a.a = 0xffffeeee;
+	a.c = 0x30;
+
+	printf("%x\n", a.a);
+
+}
+
+//int main_day1()
+int main()
+{
+	//enum ScoreLevel level =
+		/*enum ScoreLevel level = 0;
+		printf("%s\n", level);*/
+		// if 
+		//printf("%d", GetLevel(88));
+		//int a = 10;
+		/*struct Student s1 = {1, 100, "smx"};
+
+		printf("id = %d, name = %s, score = %lf\n", s1.id, s1.name, s1.score);*/
+
+		//printf("%d\n", sizeof(struct Student));
+
+		//s1 = struct 
+		// atoi  itoa  
+		// a: alpha i:int
+
+		/*int a = 10;
+		char buffer[10] = { 0 };
+		_itoa(a, buffer, 2);
+
+
+		printf("%s\n", buffer);*/
+		//atoi()
+		/*int b = 011;
+		printf("%d\n", b);*/
+		/*int a = 0x00030C34;
+		int direction = 0;
+		scanf("");
+		SetWindowPos(a, NULL, 100, 0, 1000, 1000, 0);*/
+		return 0;
 }

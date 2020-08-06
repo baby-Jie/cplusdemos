@@ -27,5 +27,8 @@
     <ClCompile Include="PatB\4.c">
       <Filter>源文件\PatB</Filter>
     </ClCompile>
+    <ClCompile Include="5.c">
+      <Filter>源文件\PatB</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

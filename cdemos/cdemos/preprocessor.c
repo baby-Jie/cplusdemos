@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main_processor()
 {
 	printf("hello");
 	return 0;

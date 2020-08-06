@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="5.c" />
     <ClCompile Include="PatB\1.c" />
     <ClCompile Include="PatB\2.c" />
     <ClCompile Include="PatB\4.c" />
