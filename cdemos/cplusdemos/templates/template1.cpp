@@ -10,10 +10,14 @@ void templateFun(T a)
 	cout << a << endl;
 }
 
-int main_template1()
+void testTemplateFun()
 {
 	templateFun("string");
 	templateFun(123);
+}
+
+int main()
+{
 	system("pause");
 	return 0;
 }

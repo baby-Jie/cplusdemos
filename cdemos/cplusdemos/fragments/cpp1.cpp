@@ -65,7 +65,7 @@ void testRunTime()
 	cout << end - start << endl;
 }
 
-int main()
+int main_cpp1()
 {
 	testRunTime();
 	return 0;

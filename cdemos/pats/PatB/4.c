@@ -1,13 +1,10 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-#include <ctime>
 
 int main4()
 {
-	time(NULL);
 	int n, max_score, min_score, temp_score;
 	char max_name[11], min_name[11], max_id[11], min_id[11], temp_id[11], temp_name[11], i;
 

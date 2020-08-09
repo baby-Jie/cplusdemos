@@ -100,9 +100,34 @@ void test1()
 
 }
 
-//int main_day1()
+void file_copy()
+{
+	char s[100] = "111"; // ³¤¶ÈÎª4 
+
+	// r w a(append)
+
+	FILE* fp = fopen("C:\\Users\\smx\\Desktop\\file_rename.txt", "r");
+	char buffer[101] = {0};
+
+	int ret = fread(buffer, sizeof(char), 100, fp);
+	buffer[ret] = 0;
+	printf("%s", buffer);
+
+	while (ret)
+	{
+		memset(buffer, 0, 101);
+		ret = fread(buffer, sizeof(char), 100, fp);
+		buffer[ret] = 0;
+		printf("%s", buffer);
+	}
+
+	fclose(fp);
+}
+
 int main()
 {
+	file_copy();
+	printf("hello\n");
 	//enum ScoreLevel level =
 		/*enum ScoreLevel level = 0;
 		printf("%s\n", level);*/

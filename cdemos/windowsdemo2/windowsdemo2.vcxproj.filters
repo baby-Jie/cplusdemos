@@ -13,27 +13,10 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\templates">
-      <UniqueIdentifier>{5db73f65-5d63-40b7-afa6-90fd9cea2085}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\fragments">
-      <UniqueIdentifier>{b9b6c89b-21b5-4bb9-81f2-7c7b44f886b5}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="templates\template1.cpp">
-      <Filter>源文件\templates</Filter>
-    </ClCompile>
-    <ClCompile Include="fragments\cpp1.cpp">
-      <Filter>源文件\fragments</Filter>
-    </ClCompile>
-    <ClCompile Include="Person.cpp">
+    <ClCompile Include="1.c">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Person.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
