@@ -19,6 +19,9 @@
     <Filter Include="源文件\fragments">
       <UniqueIdentifier>{b9b6c89b-21b5-4bb9-81f2-7c7b44f886b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\classobjs">
+      <UniqueIdentifier>{21ac7c42-9095-45fc-996e-856f91289224}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="templates\template1.cpp">
@@ -30,9 +33,18 @@
     <ClCompile Include="Person.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="classobjs\classobj1.cpp">
+      <Filter>源文件\classobjs</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Person.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

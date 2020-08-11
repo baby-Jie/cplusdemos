@@ -16,7 +16,7 @@ void testTemplateFun()
 	templateFun(123);
 }
 
-int main()
+int main_template()
 {
 	system("pause");
 	return 0;
