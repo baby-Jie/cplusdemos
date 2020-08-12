@@ -7,7 +7,7 @@
 int flags[101];
 int reached_flags[101];
 
-int main_5()
+int main()
 {
 	int n, i = 0;
 	scanf("%d", &n);
