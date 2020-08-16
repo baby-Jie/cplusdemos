@@ -74,12 +74,16 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	case WM_PAINT:
 		hdc = BeginPaint(hwnd, &ps);
 		GetClientRect(hwnd, &rect);
-		DrawText(hdc, TEXT("大家好，这是我的第一个窗口程序"), -1, &rect, DT_SINGLELINE | DT_CENTER | DT_VCENTER);
+		TextOut(hdc, 400, 300, TEXT("大家好，这是我的窗口程序"), 12);
+		//DrawText(hdc, TEXT("大家好，这是我的第一个窗口程序"), -1, &rect, DT_SINGLELINE | DT_CENTER | DT_VCENTER);
 		EndPaint(hwnd, &ps);
 		return 0;
-	case WM_DESTROY:
+	/*case WM_DESTROY:
 		PostQuitMessage(0);
-		return 0;
+		return 0;*/
+	/*case WM_NCLBUTTONDOWN:
+		MessageBox(hwnd, TEXT("我在非客户区点击了"), TEXT("标题"), MB_OK);
+		return 0;*/
 	}
 	return DefWindowProc(hwnd, message, wParam, lParam);
 }
