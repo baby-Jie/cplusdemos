@@ -8,7 +8,7 @@ Point test()
 	return p;
 }
 
-int main()
+int main_classobj1()
 {
 	Point p(1, 2);
 

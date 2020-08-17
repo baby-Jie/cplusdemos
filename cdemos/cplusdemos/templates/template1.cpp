@@ -16,7 +16,26 @@ void testTemplateFun()
 	templateFun(123);
 }
 
-int main_template()
+template<class T>
+class TempA
+{
+public:
+	T add(T a, T b)
+	{
+		return a + b;
+	}
+
+	T add2(T a, T b);
+};
+
+template <class T>
+T TempA<T>::add2(T a, T b)
+{
+	return a + b;
+}
+
+
+int main()
 {
 	system("pause");
 	return 0;

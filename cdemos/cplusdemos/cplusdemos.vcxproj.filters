@@ -39,6 +39,9 @@
     <ClCompile Include="classobjs\classobj1.cpp">
       <Filter>源文件\classobjs</Filter>
     </ClCompile>
+    <ClCompile Include="typecast.cpp">
+      <Filter>源文件\fragments</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Person.h">
