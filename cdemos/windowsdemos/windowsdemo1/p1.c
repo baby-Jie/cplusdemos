@@ -63,6 +63,41 @@ void test_p4(HINSTANCE hInstance, int iCmdShow)
 	}
 }
 
+void test_start(HINSTANCE hInstance, int iCmdShow)
+{
+	static TCHAR appName[] = TEXT("我的测试程序");
+	HWND hwnd; // 句柄
+	MSG msg; // 消息
+	WNDCLASS wndClass;
+
+	wndClass.style = CS_HREDRAW;
+	wndClass.lpfnWndProc = WndProc;
+	wndClass.cbClsExtra = 0;
+	wndClass.cbWndExtra = 0;
+	wndClass.hInstance = hInstance;
+	wndClass.hIcon = LoadIcon(NULL, IDI_APPLICATION);
+	wndClass.hCursor = LoadCursor(NULL, IDC_ARROW);
+	wndClass.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);
+	wndClass.lpszMenuName = NULL;
+	wndClass.lpszClassName = appName;
+
+	if (!RegisterClass(&wndClass))
+	{
+		MessageBox(NULL, TEXT("这个程序需要在Windows NT才能执行o !"), appName, MB_ICONERROR);
+		return;
+	}
+
+	hwnd = CreateWindow(appName, TEXT("smx"), WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, NULL, NULL, hInstance, NULL);
+
+	ShowWindow(hwnd, iCmdShow);
+
+	while (GetMessage(&msg, hwnd, 0, 0))
+	{
+		TranslateMessage(&msg);
+		DispatchMessage(&msg);
+	}
+}
+
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
@@ -89,10 +124,9 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 }
 
 
-//int main()
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE preHInstance, PSTR pstr, int iCmdShow)
 {
-	test_p4(hInstance, iCmdShow);
+	test_start(hInstance, iCmdShow);
 
 
 	return 0;

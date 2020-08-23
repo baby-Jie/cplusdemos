@@ -34,9 +34,20 @@ T TempA<T>::add2(T a, T b)
 	return a + b;
 }
 
+class A
+{
+public:
+	~A()
+	{
+		cout << "Îö¹¹º¯Êı" << endl;
+	}
+};
+
 
 int main()
 {
+	auto_ptr<A> pa(new A);
+	
 	system("pause");
 	return 0;
 }
