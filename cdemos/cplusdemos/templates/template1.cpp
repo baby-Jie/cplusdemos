@@ -44,7 +44,7 @@ public:
 };
 
 
-int main()
+int main_template()
 {
 	auto_ptr<A> pa(new A);
 	

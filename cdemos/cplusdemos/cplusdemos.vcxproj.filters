@@ -22,6 +22,9 @@
     <Filter Include="源文件\classobjs">
       <UniqueIdentifier>{21ac7c42-9095-45fc-996e-856f91289224}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\stls">
+      <UniqueIdentifier>{a0d25d56-ea74-430e-8177-b77d333a57c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="templates\template1.cpp">
@@ -41,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="typecast.cpp">
       <Filter>源文件\fragments</Filter>
+    </ClCompile>
+    <ClCompile Include="stls\vector1.cpp">
+      <Filter>源文件\stls</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
