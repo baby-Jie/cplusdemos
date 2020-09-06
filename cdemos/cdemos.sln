@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "windowsdemos", "windowsdemo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "windowsdemo1", "windowsdemos\windowsdemo1\windowsdemo1.vcxproj", "{9A1555FD-729B-4297-B451-85776895ED1F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "babyy", "babyy", "{3026D828-C1CE-44F6-84FB-003CB5CBB492}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "c", "c", "{079A78E7-F913-4A41-9C43-817C92AFC0AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -59,6 +63,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9A1555FD-729B-4297-B451-85776895ED1F} = {3F09E4C9-D8A2-455D-ABA1-1B3137F485BB}
+		{079A78E7-F913-4A41-9C43-817C92AFC0AE} = {3026D828-C1CE-44F6-84FB-003CB5CBB492}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82BC216C-4EAB-456D-8D09-B2D64AAFCB2D}
